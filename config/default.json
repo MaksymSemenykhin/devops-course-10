@@ -1,0 +1,7 @@
+{
+  "user": {
+    "allow_new": true
+  },
+  "env": "develop",
+  "port": "8000"
+}

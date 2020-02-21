@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "server": "node --inspect ./server",
+    "linter": "jshint ./ --exclude=node_modules,.vagrant",
+    "test": "nyc mocha  test/specs/**"
+  },
+  "dependencies": {
+    "associative-array": "^1.0.2",
+    "config": "^3.2.5",
+    "ioredis": "^4.14.1",
+    "promise-tools": "^2.1.0",
+    "socket.io": "^2.3.0",
+    "utility": "^1.16.3",
+    "utils": "^0.3.1",
+    "validatorjs": "^3.18.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.11.0",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "sinon": "^9.0.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
