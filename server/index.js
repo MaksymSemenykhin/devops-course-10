@@ -1,7 +1,7 @@
 'use strict'
 
 const CONFIG = require('config');
-const SERVER = require("socket.io").listen(8000);
+const SERVER = require("socket.io").listen(CONFIG.get('port'));
 const USER_MODEL = require("../models/user");
 const CONNECT_MODEL = require("../forms/connect");
 const UTILS = require('utils')._ ;

@@ -1,11 +1,11 @@
 'use strict'
 
-
+const CONFIG = require('config');
 const io = require("socket.io-client");
 const assert = require('assert');
 let ioClient;
 const host = 'localhost';
-const port = 8000;
+const port = CONFIG.get('port');
 
 describe('Client', function () {
     this.timeout(50);
