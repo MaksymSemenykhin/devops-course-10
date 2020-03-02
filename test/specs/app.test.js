@@ -28,7 +28,6 @@ describe('Client', function () {
 
         ioClient.on('alert', (response) => {
             const alertData = JSON.parse(response);
-            // console.log(response);
             assert.equal(alertData.errors.username,'The username field is required.');
         })
 
@@ -45,7 +44,6 @@ describe('Client', function () {
 
         ioClient.on('alert', (response) => {
             const alertData = JSON.parse(response);
-            console.log(response);
             assert.equal(alertData.errors.username,'The username field is required.');
         })
 
@@ -53,8 +51,6 @@ describe('Client', function () {
 
 
     afterEach(() => {
-
         ioClient.close()
-        //         // this._http.close()
     })
 })
