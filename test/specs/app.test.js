@@ -8,7 +8,7 @@ const host = 'localhost';
 const port = CONFIG.get('port');
 
 describe('Client', function () {
-    this.timeout(50);
+    this.timeout(100);
 
     it('should connect to server', (done) => {
         ioClient = io.connect(`http://${host}:${port}`,{

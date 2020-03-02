@@ -1,10 +1,16 @@
 'use strict'
-
+const APP = require('express')();
+const SERVER_HTTP = require('http').Server(APP);
 const CONFIG = require('config');
-const SERVER = require("socket.io").listen(CONFIG.get('port'));
+const SERVER = require("socket.io")(SERVER_HTTP);
 const USER_MODEL = require("../models/user");
 const CONNECT_MODEL = require("../forms/connect");
 const UTILS = require('utils')._ ;
+SERVER_HTTP.listen(CONFIG.get('port'));
+
+APP.get('/', function (req, res) {
+    res.send(CONFIG);
+});
 
 
 function logUser(user , text ){
