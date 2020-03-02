@@ -8,7 +8,7 @@ const CONNECT_MODEL = require("../forms/connect");
 const UTILS = require('utils')._ ;
 SERVER_HTTP.listen(CONFIG.get('port'));
 
-APP.get('/', function (req, res) {
+APP.get('*', function (req, res) {
     res.send(CONFIG);
 });
 
