@@ -89,3 +89,7 @@ npm run linter
 ```
 npm run test
 ```
+
+SECURITY
+------------
+> For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via -p on docker run), it will be open without a password to anyone.For further information, see the following links about [Redis security](https://redis.io/topics/security)
