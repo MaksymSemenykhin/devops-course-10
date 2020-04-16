@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: %ENV%,
+    name: "%ENV%",
     script: 'server/index.js',
     instances: 1,
     autorestart: false,
