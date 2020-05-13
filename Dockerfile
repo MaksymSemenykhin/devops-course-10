@@ -1,6 +1,6 @@
 FROM node:12.16.1
 
-COPY /var/www/nodes/dev .
+COPY . .
 
 EXPOSE 8080
 
