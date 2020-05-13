@@ -7,7 +7,7 @@ services:
     depends_on:
       - redis
     ports:
-      - "127.0.0.1:8002:8080"
+      - "127.0.0.1:8010:8080"
 
   redis:
     image: redis:5.0
