@@ -1,6 +1,13 @@
 version: "3.5"
 
 services:
+  dev-app:
+    image: dev-app-local:latest
+    container_name: dev-app
+    depends_on: redis
+    ports:
+    - "127.0.0.1:8002:8080"
+
   redis:
     image: redis:5.0
     container_name: redis
