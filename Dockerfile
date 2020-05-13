@@ -1,6 +1,6 @@
 FROM node:12.16.1
 
-RUN apt update && apt upgrade -y && apt install jq
+RUN apt update && apt upgrade -y && apt install jq -y
 
 COPY . .
 
