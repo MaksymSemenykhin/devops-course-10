@@ -11,7 +11,7 @@
     "http": "0.0.0",
     "ioredis": "^4.14.1",
     "promise-tools": "^2.1.0",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "utility": "^1.16.3",
     "utils": "^0.3.1",
     "validatorjs": "^3.18.1"
